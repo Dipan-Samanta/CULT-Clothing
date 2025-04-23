@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CULT</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* About Page Specific Styles */
+        .about-banner {
+            background-image: url('data:image/jpeg;base64,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'); /* Your image path */
+            background-size: cover;
+            background-position: 50% 20%;
+            color: var(--text-primary);
+            text-align: center;
+            padding: 100px 0;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+
+        .about-banner h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-banner p{
+            color: black;
+            font-weight: bold;
+        }
+
+        .about-section {
+            background-color: var(--bg-light);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--bg-dark);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            font-size: 1.3rem;
+            color: var(--text-primary);
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="CULT logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about-banner">
+            <h1>About Us</h1>
+            <p>Get to know more about our company and our mission.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Story</h2>
+            <p>
+                CULT was born from a desire to celebrate the power of personal style. We believe that clothing should be a canvas for self-expression, not a uniform of conformity. We create distinctive designs for those who dare to be different, fostering a community that values individuality and empowers everyone to showcase their true selves through what they wear.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Mission</h2>
+            <p>
+                CULT exists to empower individuals on their journey of self-discovery through fashion. We believe clothing is a powerful medium for expressing one's authentic identity, and we're committed to providing distinctive designs that inspire confidence and celebrate uniqueness. CULT fosters a community where bold self-expression is not just encouraged but embraced, as we strive to create garments that serve as a canvas for personal storytelling and a catalyst for defying convention. Our mission extends beyond simply providing apparel; it's about cultivating a movement where everyone feels empowered to showcase their true selves, unapologetically.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="img/john.jpg" alt="John Doe">  <h3>John Doe</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/jane.jpg" alt="Jane Smith">  <h3>Jane Smith</h3>
+                    <p>Head of Marketing</p>
+                </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CULT . All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

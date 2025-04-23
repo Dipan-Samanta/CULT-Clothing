@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CULT - Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Only add CSS specific to this page */
+        .products-page {
+            margin-bottom: 60px;
+            margin-top: 30px;
+        }
+
+        .products-page h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .products-page {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="CULT logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="login.html"><button class="btn" id="login-register">Login / Register</button></a>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container products-page">
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://i.pinimg.com/474x/3b/af/12/3baf12ba030768853aff6dc123b2ff72.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Full-Slevees Shirt</h3>
+                        <p>Comfortable and trendy shirt for everyday wear.</p>
+                        <span class="product-price">₹699.99</span>  <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://i.pinimg.com/474x/9d/99/3a/9d993a707b0c1a96a2990fb3aa971810.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Classic Shirt</h3>
+                        <p>Durable and versatile shirt that fit perfectly.</p>
+                        <span class="product-price">₹699.99</span>  <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://i.pinimg.com/474x/04/1f/e5/041fe5e6d50df53052b680844a21f2b3.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Old Money Shirt</h3>
+                        <p>Stylish shirt for everyone.</p>
+                        <span class="product-price">₹699.99</span>  <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://i.pinimg.com/474x/54/12/89/5412897387c66dd91ba624003f0b1516.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Black Formal Pants</h3>
+                        <p>Light and breezy pants for summer days.</p>
+                        <span class="product-price">₹899.99</span>  <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://i.pinimg.com/474x/e3/5f/1d/e35f1d2ab73956cedfdd854c7c7af441.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Light Beige Formal Pants</h3>
+                        <p>Comfortable and stylish pants for office.</p>
+                        <span class="product-price">₹899.99</span>  <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://i.pinimg.com/474x/50/55/74/505574b112da1a7f089599ae7e6e8481.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Off-White Formal Pants</h3>
+                        <p>Stylish pants to complete your look.</p>
+                        <span class="product-price">₹899.99</span>  <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://i.pinimg.com/474x/4c/b2/6c/4cb26c807cf139dba5d5823cb4b8c99c.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Striped V-Neck Tee</h3>
+                        <p>Classic stripes and comfortable knit.</p>
+                        <span class="product-price">₹550.00</span>  <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://i.pinimg.com/474x/57/4a/fb/574afb1662f9e91254cfb99b2c2c78b3.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Textured Polo Shirt</h3>
+                        <p>Subtle texture and casual buttoned style.</p>
+                        <span class="product-price">₹550.00</span>  <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://i.pinimg.com/474x/c3/79/6c/c3796cde45e11112a2e70b5f1a5a290b.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Vertical Panel Tee</h3>
+                        <p>Bold vertical stripes and modern look.</p>
+                        <span class="product-price">₹550.00</span>  <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CULT . All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>  </body>
+</html>
