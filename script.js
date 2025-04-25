@@ -151,7 +151,7 @@ function updateCart() {
 
     // Update total
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    cartTotal.textContent = total.toFixed(2);
+    cartTotal.textContent = `₹${total.toFixed(2)}`;  //  Corrected: Added Rupee symbol
 }
 
 // Cart quantity functions
